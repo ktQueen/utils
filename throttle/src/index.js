@@ -9,9 +9,9 @@
  * @param {number} delay 延迟时间
  * @return {function} 函数
  * @example
- *  var throttle = require('@fe/utils/throttle');
+ *  var throttle = require('front-end-utils/throttle');
  *  或
- *  import throttle from '@fe/utils/throttle';
+ *  import throttle from 'front-end-utils/throttle';
  *  console.log(throttle(function(){console.log(1);},300));
  */
 module.exports = (func, delay) => {

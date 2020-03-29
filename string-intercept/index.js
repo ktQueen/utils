@@ -89,9 +89,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {number} index 位置
  * @returns {string} indexStr index位置的字符串
  * @example
- *  var stringIntercept = require('@fe/utils/string-intercept');
+ *  var stringIntercept = require('front-end-utils/string-intercept');
  *  或
- *  import stringIntercept from '@fe/utils/string-intercept';
+ *  import stringIntercept from 'front-end-utils/string-intercept';
  *  console.log(stringIntercept('hello world',1));
  *  ======》e
  */
@@ -206,9 +206,9 @@ module.exports = (source, index) => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

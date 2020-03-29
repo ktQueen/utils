@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: array-exchange-location</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: array-exchange-location</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">数组元素之间交换位置的方法</div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>kt</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array-exchange-location_src_index.js.html">array-exchange-location/src/index.js</a>, <a href="array-exchange-location_src_index.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".exchange"><span class="type-signature">(static) </span>exchange<span class="signature">(arr, index, newIndex)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    相互交换
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">交换位置的整个数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">现在的位置</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newIndex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">交换位置后位置</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array-exchange-location_src_index.js.html">array-exchange-location/src/index.js</a>, <a href="array-exchange-location_src_index.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    arr 返回交换之后的新数组
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
+ 或
+ import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
+ console.log(arrayExchangeLocation.exchange(['1','2','3','4'],1,3));
+ ========>['1','4','3','2']</code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".toFirst"><span class="type-signature">(static) </span>toFirst<span class="signature">(arr, index)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    交换到第一个
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">交换位置的整个数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">现在的位置</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array-exchange-location_src_index.js.html">array-exchange-location/src/index.js</a>, <a href="array-exchange-location_src_index.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    arr 返回交换之后的新数组
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
+ 或
+ import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
+ console.log(arrayExchangeLocation.toFirst(['1','2','3','4'],2));
+ ========>['3','2','1','4']</code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".toLast"><span class="type-signature">(static) </span>toLast<span class="signature">(arr, index)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    交换到最后一个
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">交换位置的整个数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">现在的位置</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array-exchange-location_src_index.js.html">array-exchange-location/src/index.js</a>, <a href="array-exchange-location_src_index.js.html#line62">line 62</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    arr 返回交换之后的新数组
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
+ 或
+ import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
+ console.log(arrayExchangeLocation.toLast(['1','2','3','4'],2));
+ ========>['1','2','4','3']</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-array-equal.html">array-equal</a></li><li><a href="module-array-exchange-location.html">array-exchange-location</a></li><li><a href="module-array-object-repeat.html">array-object-repeat</a></li><li><a href="module-by-id-get-birthday-and-sex.html">by-id-get-birthday-and-sex</a></li><li><a href="module-byte-length.html">byte-length</a></li><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-class.html">class</a></li><li><a href="module-class-add.html">class-add</a></li><li><a href="module-class-has.html">class-has</a></li><li><a href="module-class-remove.html">class-remove</a></li><li><a href="module-cookie.html">cookie</a></li><li><a href="module-data-type.html">data-type</a></li><li><a href="module-debounce.html">debounce</a></li><li><a href="module-get-charcode.html">get-charcode</a></li><li><a href="module-html-decode.html">html-decode</a></li><li><a href="module-is-android.html">is-android</a></li><li><a href="module-is-app.html">is-app</a></li><li><a href="module-is-ios.html">is-ios</a></li><li><a href="module-is-mobile.html">is-mobile</a></li><li><a href="module-is-wechat.html">is-wechat</a></li><li><a href="module-load-js.html">load-js</a></li><li><a href="module-money-change.html">money-change</a></li><li><a href="module-number-change.html">number-change</a></li><li><a href="module-object-is-empty.html">object-is-empty</a></li><li><a href="module-regular.html">regular</a></li><li><a href="module-string-del-blank-space.html">string-del-blank-space</a></li><li><a href="module-string-insert.html">string-insert</a></li><li><a href="module-string-intercept.html">string-intercept</a></li><li><a href="module-thousands.html">thousands</a></li><li><a href="module-throttle.html">throttle</a></li><li><a href="module-url-query.html">url-query</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Mar 29 2020 14:45:28 GMT+0800 (China Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

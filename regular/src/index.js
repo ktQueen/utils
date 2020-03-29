@@ -9,9 +9,9 @@ module.exports = {
     /**
      * @description 邮箱
      * @example
-     *  var regular = require('@fe/utils/regular');
+     *  var regular = require('front-end-utils/regular');
      *  或
-     *  import regular from '@fe/utils/regular';
+     *  import regular from 'front-end-utils/regular';
      *  console.log(regular.email.test('123'));
      *  ======》false
      */
@@ -20,9 +20,9 @@ module.exports = {
      * @description 电话号码（复杂）
      * 正确格式为：XXXX-XXXXXXX，XXXX-XXXXXXXX，XXX-XXXXXXX，XXX-XXXXXXXX，XXXXXXX，XXXXXXXX
      * @example
-     *  var regular = require('@fe/utils/regular');
+     *  var regular = require('front-end-utils/regular');
      *  或
-     *  import regular from '@fe/utils/regular';
+     *  import regular from 'front-end-utils/regular';
      *  console.log(regular.phoneNumber.test('123'));
      *  ======》false
      */
@@ -31,9 +31,9 @@ module.exports = {
      * @description 手机号码（简单）
      * 正确格式为：1开头，后面10位就行
      * @example
-     *  var regular = require('@fe/utils/regular');
+     *  var regular = require('front-end-utils/regular');
      *  或
-     *  import regular from '@fe/utils/regular';
+     *  import regular from 'front-end-utils/regular';
      *  console.log(regular.phone.test('123'));
      *  ======》false
      */
@@ -41,9 +41,9 @@ module.exports = {
     /**
      * @description 身份证号（15位或18位数字）
      * @example
-     *  var regular=require('@fe/utils/regular');
+     *  var regular=require('front-end-utils/regular');
      *  或
-     *  import regular from '@fe/utils/regular';
+     *  import regular from 'front-end-utils/regular';
      *  console.log(regular.idCard.test('123'));
      *  ======》false
      */
@@ -51,9 +51,9 @@ module.exports = {
     /**
      * @description 银行卡号（12-20位数字）
      * @example
-     *  var regular=require('@fe/utils/regular');
+     *  var regular=require('front-end-utils/regular');
      *  或
-     *  import regular from '@fe/utils/regular';
+     *  import regular from 'front-end-utils/regular';
      *  console.log(regular.bankCardNumber.test('123'));
      *  ======》false
      */

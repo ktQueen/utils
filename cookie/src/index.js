@@ -20,9 +20,9 @@ module.exports = {
      * @param {string} [domain]  cookie的域名，默认为js文件所在域名
      * @param {String} [path='/'] cookie路径，默认为当前路径js文件所在路径
      * @example
-     *  var cookie = require('@fe/utils/cookie');
+     *  var cookie = require('front-end-utils/cookie');
      *  或
-     *  import cookie from '@fe/utils/cookie';
+     *  import cookie from 'front-end-utils/cookie';
      *  cookie.setCookie('user', 'kitty', '2016-01-01 00:00:00');
      */
     setCookie(name, value, time, domain, path) {
@@ -47,9 +47,9 @@ module.exports = {
      * @param {string} name cookie名
      * @return {string|null} cookie值
      * @example
-     *  var cookie = require('@fe/utils/cookie');
+     *  var cookie = require('front-end-utils/cookie');
      *  或
-     *  import cookie from '@fe/utils/cookie';
+     *  import cookie from 'front-end-utils/cookie';
      *  cookie.getCookie('user');
      *  ========>kitty
      */
@@ -63,9 +63,9 @@ module.exports = {
      * @description 删除cookie,要删除一个cookie，比如domain和path完全相同。如果设置cookie时没有设置domain和path，则删除时也不需要设置这两个值，如果设置了则删除时就需要传入这两个值
      * @param  {String} name   [cookie名]
      * @example
-     *  var cookie = require('@fe/utils/cookie');
+     *  var cookie = require('front-end-utils/cookie');
      *  或
-     *  import cookie from '@fe/utils/cookie';
+     *  import cookie from 'front-end-utils/cookie';
      *  cookie.delCookie('user');
      */
     delCookie(name) {

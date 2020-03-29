@@ -9,9 +9,9 @@
  * @param {string} value -身份证号码
  * @return {object}  如果身份证是错误的则返回错误提示，否则返回包含出生日期和性别的对象
  * @example
- *  var byIdGetBirthdayAndSex = require('@fe/utils/by-id-get-birthday-and-sex');
+ *  var byIdGetBirthdayAndSex = require('front-end-utils/by-id-get-birthday-and-sex');
  *  或
- *  import byIdGetBirthdayAndSex from '@fe/utils/by-id-get-birthday-and-sex';
+ *  import byIdGetBirthdayAndSex from 'front-end-utils/by-id-get-birthday-and-sex';
  *  console.log(byIdGetBirthdayAndSex('1212'));
  *  ======》身份证号码错误
  *  console.log(byIdGetBirthdayAndSex('110101199003079075'));

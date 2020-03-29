@@ -14,9 +14,9 @@ module.exports = {
      * @param {object} obj 需要转化的参数
      * @return {string} 拼接好的字符串
      * @example
-     *  var urlQuery = require('@fe/utils/url-query');
+     *  var urlQuery = require('front-end-utils/url-query');
      *  或
-     *  import urlQuery from '@fe/utils/url-query';
+     *  import urlQuery from 'front-end-utils/url-query';
      *  console.log(urlQuery.objToUrl({name:'hehe',age:10}));
      *  ========>name=hehe&age=10
      */
@@ -36,9 +36,9 @@ module.exports = {
      * @param {string} url -传入的url或者后面拼接的参数
      * @return {object} 对应的url参数对转换的对象
      * @example
-     *  var urlParameterConvertObject = require('@fe/utils/url-parameter-convert-object');
+     *  var urlParameterConvertObject = require('front-end-utils/url-parameter-convert-object');
      *  或
-     *  import urlParameterConvertObject from '@fe/utils/url-parameter-convert-object';
+     *  import urlParameterConvertObject from 'front-end-utils/url-parameter-convert-object';
      *  console.log(urlParameterConvertObject('/pages/viewpage.action?pageId=82796794'));
      *  ========>{pageId: "82796794"}
      *  console.log(urlQuery.urlToObj('a=1&b=2'));

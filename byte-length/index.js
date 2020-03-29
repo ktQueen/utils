@@ -89,9 +89,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {number} [num=2] 一个字符占用的字节，全角默认占2个字符，半角默认占一个字符
  * @return {number} len 字符集占用的字节长度
  * @example
- *  var byteLength = require('@fe/utils/byte-length');
+ *  var byteLength = require('front-end-utils/byte-length');
  *  或
- *  import byteLength from '@fe/utils/byte-length';
+ *  import byteLength from 'front-end-utils/byte-length';
  *  console.log(byteLength('你好'));
  *  ======》4
  */
@@ -217,9 +217,9 @@ module.exports = (val, num) => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

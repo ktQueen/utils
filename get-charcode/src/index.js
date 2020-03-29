@@ -8,9 +8,9 @@
  * @param {string} data -传入的中文字符
  * @return {string}  num -获取对应的中文的code编码
  * @example
- *  var getCharcode = require('@fe/utils/get-charcode');
+ *  var getCharcode = require('front-end-utils/get-charcode');
  *  或
- *  import getCharcode from '@fe/utils/get-charcode';
+ *  import getCharcode from 'front-end-utils/get-charcode';
  *  getCharcode('您好');
  *  ========>49488
  */

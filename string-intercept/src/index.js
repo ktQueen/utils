@@ -10,9 +10,9 @@
  * @param {number} index 位置
  * @returns {string} indexStr index位置的字符串
  * @example
- *  var stringIntercept = require('@fe/utils/string-intercept');
+ *  var stringIntercept = require('front-end-utils/string-intercept');
  *  或
- *  import stringIntercept from '@fe/utils/string-intercept';
+ *  import stringIntercept from 'front-end-utils/string-intercept';
  *  console.log(stringIntercept('hello world',1));
  *  ======》e
  */

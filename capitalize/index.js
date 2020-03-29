@@ -88,9 +88,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {string} str 英文字母
  * @return {string} newStr 首字母大写的英文字母
  * @example
- *  var capitalize = require('@fe/utils/capitalize');
+ *  var capitalize = require('front-end-utils/capitalize');
  *  或
- *  import capitalize from '@fe/utils/capitalize';
+ *  import capitalize from 'front-end-utils/capitalize';
  *  console.log(capitalize('hello'));
  *  ======》Hello
  */
@@ -205,9 +205,9 @@ module.exports = str => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

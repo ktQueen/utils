@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: number-change</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: number-change</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">数字转换</div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>2019-01-03</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>kt</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="number-change_src_index.js.html">number-change/src/index.js</a>, <a href="number-change_src_index.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".toChinese"><span class="type-signature">(static) </span>toChinese<span class="signature">(arabic)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    阿拉伯数字转中文数字,
+如果传入数字时则最多处理到21位，超过21位js会自动将数字表示成科学计数法，导致精度丢失和处理出错
+传入数字字符串则没有限制
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arabic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">阿拉伯数字</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="number-change_src_index.js.html">number-change/src/index.js</a>, <a href="number-change_src_index.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    roman 返回的是对应的中文数字
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var numberChange = require('front-end-utils/number-change');
+ 或
+ import numberChange from 'front-end-utils/number-change';
+ console.log(numberChange.toChinese('123'));
+ ======》一百二十三</code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".toRoman"><span class="type-signature">(static) </span>toRoman<span class="signature">(arabic)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    阿拉伯数字转换成罗马数字
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arabic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">阿拉伯数字</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="number-change_src_index.js.html">number-change/src/index.js</a>, <a href="number-change_src_index.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    roman 返回的是对应的罗马数字
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var numberChange = require('front-end-utils/number-change');
+ 或
+ import numberChange from 'front-end-utils/number-change';
+ console.log(numberChange.toRoman('123'));
+ ======》CXXIII</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-array-equal.html">array-equal</a></li><li><a href="module-array-exchange-location.html">array-exchange-location</a></li><li><a href="module-array-object-repeat.html">array-object-repeat</a></li><li><a href="module-by-id-get-birthday-and-sex.html">by-id-get-birthday-and-sex</a></li><li><a href="module-byte-length.html">byte-length</a></li><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-class.html">class</a></li><li><a href="module-class-add.html">class-add</a></li><li><a href="module-class-has.html">class-has</a></li><li><a href="module-class-remove.html">class-remove</a></li><li><a href="module-cookie.html">cookie</a></li><li><a href="module-data-type.html">data-type</a></li><li><a href="module-debounce.html">debounce</a></li><li><a href="module-get-charcode.html">get-charcode</a></li><li><a href="module-html-decode.html">html-decode</a></li><li><a href="module-is-android.html">is-android</a></li><li><a href="module-is-app.html">is-app</a></li><li><a href="module-is-ios.html">is-ios</a></li><li><a href="module-is-mobile.html">is-mobile</a></li><li><a href="module-is-wechat.html">is-wechat</a></li><li><a href="module-load-js.html">load-js</a></li><li><a href="module-money-change.html">money-change</a></li><li><a href="module-number-change.html">number-change</a></li><li><a href="module-object-is-empty.html">object-is-empty</a></li><li><a href="module-regular.html">regular</a></li><li><a href="module-string-del-blank-space.html">string-del-blank-space</a></li><li><a href="module-string-insert.html">string-insert</a></li><li><a href="module-string-intercept.html">string-intercept</a></li><li><a href="module-thousands.html">thousands</a></li><li><a href="module-throttle.html">throttle</a></li><li><a href="module-url-query.html">url-query</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Mar 29 2020 14:45:28 GMT+0800 (China Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -7,9 +7,9 @@
  *
  * @return {boolean} 如果为Android手机返回true，否则返回false
  * @example
- *  var isAndroid = require('@fe/utils/is-android');
+ *  var isAndroid = require('front-end-utils/is-android');
  *  或
- *  import isAndroid from '@fe/utils/is-android';
+ *  import isAndroid from 'front-end-utils/is-android';
  *  console.log(isAndroid());
  *  ======》false
  */

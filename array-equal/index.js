@@ -89,9 +89,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {Array} arr2 数组2
  * @returns {Boolean} 比较的结果值
  * @example
- *  var arrayEqual = require('@fe/utils/array-equal');
+ *  var arrayEqual = require('front-end-utils/array-equal');
  *  或
- *  import arrayEqual from '@fe/utils/array-equal';
+ *  import arrayEqual from 'front-end-utils/array-equal';
  *  console.log(arrayEqual(['1'], ['1']));
  *  ======》true
  */
@@ -212,9 +212,9 @@ module.exports = (arr1, arr2) => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

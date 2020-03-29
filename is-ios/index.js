@@ -86,9 +86,9 @@ return /******/ (function(modules) { // webpackBootstrap
  *
  * @return {boolean} 如果为iOS返回true，否则返回false
  * @example
- *  var isIos = require('@fe/utils/is-ios');
+ *  var isIos = require('front-end-utils/is-ios');
  *  或
- *  import isIos from '@fe/utils/is-ios';
+ *  import isIos from 'front-end-utils/is-ios';
  *  console.log(isIos());
  *  ======》false
  */

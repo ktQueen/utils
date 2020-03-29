@@ -141,9 +141,9 @@ module.exports = {
      * @param {string|number} num 小写金额
      * @return {string|boolean} 大写金额
      * @example
-     *  var moneyChange = require('@fe/utils/money-change');
+     *  var moneyChange = require('front-end-utils/money-change');
      *  或
-     *  import moneyChange from '@fe/utils/money-change';
+     *  import moneyChange from 'front-end-utils/money-change';
      *  console.log(moneyChange.formatRMB('123'));
      *  ======》壹佰贰拾叁元整
      */
@@ -162,9 +162,9 @@ module.exports = {
      * @param {string} 大写金额
      * @return {string|number} rmb 小写金额
      * @example
-     *  var moneyChange = require('@fe/utils/money-change');
+     *  var moneyChange = require('front-end-utils/money-change');
      *  或
-     *  import moneyChange from '@fe/utils/money-change';
+     *  import moneyChange from 'front-end-utils/money-change';
      *  console.log(moneyChange.parseRMB('壹佰贰拾叁元整'));
      *  ======》123
      */

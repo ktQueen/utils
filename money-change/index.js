@@ -221,9 +221,9 @@ module.exports = {
      * @param {string|number} num 小写金额
      * @return {string|boolean} 大写金额
      * @example
-     *  var moneyChange = require('@fe/utils/money-change');
+     *  var moneyChange = require('front-end-utils/money-change');
      *  或
-     *  import moneyChange from '@fe/utils/money-change';
+     *  import moneyChange from 'front-end-utils/money-change';
      *  console.log(moneyChange.formatRMB('123'));
      *  ======》壹佰贰拾叁元整
      */
@@ -242,9 +242,9 @@ module.exports = {
      * @param {string} 大写金额
      * @return {string|number} rmb 小写金额
      * @example
-     *  var moneyChange = require('@fe/utils/money-change');
+     *  var moneyChange = require('front-end-utils/money-change');
      *  或
-     *  import moneyChange from '@fe/utils/money-change';
+     *  import moneyChange from 'front-end-utils/money-change';
      *  console.log(moneyChange.parseRMB('壹佰贰拾叁元整'));
      *  ======》123
      */
@@ -362,9 +362,9 @@ module.exports = {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

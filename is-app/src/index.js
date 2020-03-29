@@ -8,9 +8,9 @@
  *
  * @returns {Boolean} value 是否为app环境
  * @example
- *  var isApp = require('@fe/utils/is-app');
+ *  var isApp = require('front-end-utils/is-app');
  *  或
- *  import isApp from '@fe/utils/is-app';
+ *  import isApp from 'front-end-utils/is-app';
  *  console.log(isApp();
  *  ======》false
  */

@@ -15,9 +15,9 @@ module.exports = {
      * @param  {HTMLElement} ele 当前元素
      * @param  {String} cls className名
      * @example
-     *  var classObj = require('@fe/utils/class');
+     *  var classObj = require('front-end-utils/class');
      *  或
-     *  import classObj from '@fe/utils/class';
+     *  import classObj from 'front-end-utils/class';
      *  classObj.addClass(document.getElementById('app'), 'demo123');
      */
     addClass:addClass,
@@ -27,9 +27,9 @@ module.exports = {
      * @param {String} cls className名
      * @return {Boolean} 是否有当前的class
      * @example
-     *  var classObj = require('@fe/utils/class');
+     *  var classObj = require('front-end-utils/class');
      *  或
-     *  import classObj from '@fe/utils/class';
+     *  import classObj from 'front-end-utils/class';
      *  console.log(classObj.hasClass(document.getElementById('demo),'demo123'));
      *  ========>false
      */
@@ -39,9 +39,9 @@ module.exports = {
      * @param  {HTMLElement} ele 当前元素
      * @param  {String} cls className名
      * @example
-     *  var classObj = require('@fe/utils/class-remove');
+     *  var classObj = require('front-end-utils/class-remove');
      *  或
-     *  import classObj from '@fe/utils/class-remove';
+     *  import classObj from 'front-end-utils/class-remove';
      *  classObj.removeClass(document.getElementById('demo),'demo123');
      */
     removeClass:removeClass

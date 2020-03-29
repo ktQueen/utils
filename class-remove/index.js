@@ -88,9 +88,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param  {HTMLElement} ele 当前元素
  * @param  {String} cls className名
  * @example
- *  var removeClass = require('@fe/utils/class-remove');
+ *  var removeClass = require('front-end-utils/class-remove');
  *  或
- *  import removeClass from '@fe/utils/class-remove';
+ *  import removeClass from 'front-end-utils/class-remove';
  *  removeClass(document.getElementById('demo),'demo123');
  */
 const hasClass = __webpack_require__(1);
@@ -209,9 +209,9 @@ module.exports = (ele, cls) => {
        * @param {String} cls className名
        * @returns {Boolean} 是否有当前的class
        * @example
-       *  var hasClass = require('@fe/utils/class-has');
+       *  var hasClass = require('front-end-utils/class-has');
        *  或
-       *  import hasClass from '@fe/utils/class-has';
+       *  import hasClass from 'front-end-utils/class-has';
        *  console.log(hasClass(document.getElementById('demo),'demo123'));
        *  ========>false
        */

@@ -89,9 +89,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {String} cls className名
  * @returns {Boolean} 是否有当前的class
  * @example
- *  var hasClass = require('@fe/utils/class-has');
+ *  var hasClass = require('front-end-utils/class-has');
  *  或
- *  import hasClass from '@fe/utils/class-has';
+ *  import hasClass from 'front-end-utils/class-has';
  *  console.log(hasClass(document.getElementById('demo),'demo123'));
  *  ========>false
  */

@@ -9,9 +9,9 @@
  * @param {string} str 字符串
  * @returns {string} newStr 无空白字符串的字符串
  * @example
- *  var stringDelBlankSpace = require('@fe/utils/string-del-blank-space');
+ *  var stringDelBlankSpace = require('front-end-utils/string-del-blank-space');
  *  或
- *  import stringDelBlankSpace from '@fe/utils/string-del-blank-space';
+ *  import stringDelBlankSpace from 'front-end-utils/string-del-blank-space';
  *  console.log(stringDelBlankSpace('hello world'));
  *  ======》helloworld
  */

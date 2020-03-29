@@ -7,9 +7,9 @@
  *
  * @return {boolean} 如果为移动端返回true，否则返回false
  * @example
- *  var isMobile = require('@fe/utils/is-mobile');
+ *  var isMobile = require('front-end-utils/is-mobile');
  *  或
- *  import isMobile from '@fe/utils/is-mobile';
+ *  import isMobile from 'front-end-utils/is-mobile';
  *  console.log(isMobile());
  *  ======》false
  */

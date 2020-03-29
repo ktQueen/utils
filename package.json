@@ -1,13 +1,13 @@
 {
-  "name": "@fe/utils",
-  "version": "2.5.6",
+  "name": "front-end-utils",
+  "version": "1.1.0",
   "description": "工具函数方法",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node webpack.config.build.js",
     "docs": "jsdoc **/src/** README.md",
-    "publish": "npm publish --access=public"
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

@@ -8,9 +8,9 @@
  *
  * @returns {Boolean} value 是否为微信环境
  * @example
- *  var isWechat = require('@fe/utils/is-wechat');
+ *  var isWechat = require('front-end-utils/is-wechat');
  *  或
- *  import isWechat from '@fe/utils/is-wechat';
+ *  import isWechat from 'front-end-utils/is-wechat';
  *  console.log(isWechat();
  *  ======》false
  */

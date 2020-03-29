@@ -9,9 +9,9 @@
  * @param  {HTMLElement} ele 当前元素
  * @param  {String} cls className名
  * @example
- *  var removeClass = require('@fe/utils/class-remove');
+ *  var removeClass = require('front-end-utils/class-remove');
  *  或
- *  import removeClass from '@fe/utils/class-remove';
+ *  import removeClass from 'front-end-utils/class-remove';
  *  removeClass(document.getElementById('demo),'demo123');
  */
 const hasClass = require('../../class-has');

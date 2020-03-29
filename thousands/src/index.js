@@ -9,9 +9,9 @@
  * @param {number} num 数字
  * @returns {string} newNum 前分位数字
  * @example
- *  var thousands = require('@fe/utils/thousands');
+ *  var thousands = require('front-end-utils/thousands');
  *  或
- *  import thousands from '@fe/utils/thousands';
+ *  import thousands from 'front-end-utils/thousands';
  *  console.log(thousands(1000000));
  *  ======》1,000,000.00
  */

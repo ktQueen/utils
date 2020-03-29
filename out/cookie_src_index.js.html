@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: cookie/src/index.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: cookie/src/index.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module
+ * @name cookie
+ * @description 实现对cookie的增删改查
+ * @author kt
+ * @since 2018-11-29
+ */
+
+const dataType = require('../../data-type');
+
+module.exports = {
+    /**
+     * @description 设置cookie
+     * @param {string} name cookie名
+     * @param {string} value cookie值
+     * @param {string|number} [time] cookie的有效时间，如果不设置expres为session。关闭浏览器后或者过了session时间就清除cookie,
+     * time参数可以分两种情况：
+     * a. 如果是整数，则代码内部直接算绝对过期时间
+     * b. 如果是2016-01-01 00:00:00这种格式则直接设置为过期时间
+     * @param {string} [domain]  cookie的域名，默认为js文件所在域名
+     * @param {String} [path='/'] cookie路径，默认为当前路径js文件所在路径
+     * @example
+     *  var cookie = require('front-end-utils/cookie');
+     *  或
+     *  import cookie from 'front-end-utils/cookie';
+     *  cookie.setCookie('user', 'kitty', '2016-01-01 00:00:00');
+     */
+    setCookie(name, value, time, domain, path) {
+        if (dataType(name) !== 'string') return;
+        let str = name + '=' + encodeURIComponent(value);
+        let date;
+        if (time) {
+            if (dataType(time) === 'number') {
+                const exp = new Date();
+                time = exp.setTime(exp.getTime() + time * 24 * 60 * 60 * 1000);
+            }
+            date = new Date(time).toGMTString();
+            str += ';expires=' + date;
+        }
+        domain = domain ? domain : document.domain;// 如果没传入domain，算一下主域
+        str = str + ';domain=' + domain;
+        str = str + ';path=' + (path ? path : '/');
+        document.cookie = str;
+    },
+    /**
+     * @description 获取cookie
+     * @param {string} name cookie名
+     * @return {string|null} cookie值
+     * @example
+     *  var cookie = require('front-end-utils/cookie');
+     *  或
+     *  import cookie from 'front-end-utils/cookie';
+     *  cookie.getCookie('user');
+     *  ========>kitty
+     */
+    getCookie(name) {
+        if (dataType(name) !== 'string') return;
+        const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)');
+        const arr = document.cookie.match(reg);
+        if (arr) { return decodeURIComponent(arr[2]); } else { return null; }
+    },
+    /**
+     * @description 删除cookie,要删除一个cookie，比如domain和path完全相同。如果设置cookie时没有设置domain和path，则删除时也不需要设置这两个值，如果设置了则删除时就需要传入这两个值
+     * @param  {String} name   [cookie名]
+     * @example
+     *  var cookie = require('front-end-utils/cookie');
+     *  或
+     *  import cookie from 'front-end-utils/cookie';
+     *  cookie.delCookie('user');
+     */
+    delCookie(name) {
+        if (dataType(name) !== 'string') return;
+        this.setCookie(name, "", -1);
+    }
+};
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-array-equal.html">array-equal</a></li><li><a href="module-array-exchange-location.html">array-exchange-location</a></li><li><a href="module-array-object-repeat.html">array-object-repeat</a></li><li><a href="module-by-id-get-birthday-and-sex.html">by-id-get-birthday-and-sex</a></li><li><a href="module-byte-length.html">byte-length</a></li><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-class.html">class</a></li><li><a href="module-class-add.html">class-add</a></li><li><a href="module-class-has.html">class-has</a></li><li><a href="module-class-remove.html">class-remove</a></li><li><a href="module-cookie.html">cookie</a></li><li><a href="module-data-type.html">data-type</a></li><li><a href="module-debounce.html">debounce</a></li><li><a href="module-get-charcode.html">get-charcode</a></li><li><a href="module-html-decode.html">html-decode</a></li><li><a href="module-is-android.html">is-android</a></li><li><a href="module-is-app.html">is-app</a></li><li><a href="module-is-ios.html">is-ios</a></li><li><a href="module-is-mobile.html">is-mobile</a></li><li><a href="module-is-wechat.html">is-wechat</a></li><li><a href="module-load-js.html">load-js</a></li><li><a href="module-money-change.html">money-change</a></li><li><a href="module-number-change.html">number-change</a></li><li><a href="module-object-is-empty.html">object-is-empty</a></li><li><a href="module-regular.html">regular</a></li><li><a href="module-string-del-blank-space.html">string-del-blank-space</a></li><li><a href="module-string-insert.html">string-insert</a></li><li><a href="module-string-intercept.html">string-intercept</a></li><li><a href="module-thousands.html">thousands</a></li><li><a href="module-throttle.html">throttle</a></li><li><a href="module-url-query.html">url-query</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Mar 29 2020 14:45:28 GMT+0800 (China Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -81,15 +81,15 @@ return /******/ (function(modules) { // webpackBootstrap
  * @module
  * @name html-decode
  * @description html转码
- * @author 张君超&kt
+ * @author kt
  * @since 2018-12-18
  *
  * @param {string} str -传入需要转码的字符串
  * @return {string}  newStr -转码之后的字符串
  * @example
- *  var htmlDecode = require('@fe/utils/html-decode');
+ *  var htmlDecode = require('front-end-utils/html-decode');
  *  或
- *  import htmlDecode from '@fe/utils/html-decode';
+ *  import htmlDecode from 'front-end-utils/html-decode';
  *  console.log(htmlDecode('123&lt;'));
  *  ======》123<
  */
@@ -212,9 +212,9 @@ module.exports = str => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

@@ -88,9 +88,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {string} str 字符串
  * @returns {string} newStr 无空白字符串的字符串
  * @example
- *  var stringDelBlankSpace = require('@fe/utils/string-del-blank-space');
+ *  var stringDelBlankSpace = require('front-end-utils/string-del-blank-space');
  *  或
- *  import stringDelBlankSpace from '@fe/utils/string-del-blank-space';
+ *  import stringDelBlankSpace from 'front-end-utils/string-del-blank-space';
  *  console.log(stringDelBlankSpace('hello world'));
  *  ======》helloworld
  */
@@ -207,9 +207,9 @@ module.exports = str => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

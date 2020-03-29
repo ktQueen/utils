@@ -9,9 +9,9 @@
  * @param {Object} obj 对象
  * @returns {Boolean} value 对象是否为空
  * @example
- *  var objectIsEmpty = require('@fe/utils/object-is-empty');
+ *  var objectIsEmpty = require('front-end-utils/object-is-empty');
  *  或
- *  import objectIsEmpty from '@fe/utils/object-is-empty';
+ *  import objectIsEmpty from 'front-end-utils/object-is-empty';
  *  console.log(objectIsEmpty({});
  *  ======》true
  */

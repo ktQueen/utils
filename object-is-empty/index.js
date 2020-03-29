@@ -88,9 +88,9 @@ return /******/ (function(modules) { // webpackBootstrap
  * @param {Object} obj 对象
  * @returns {Boolean} value 对象是否为空
  * @example
- *  var objectIsEmpty = require('@fe/utils/object-is-empty');
+ *  var objectIsEmpty = require('front-end-utils/object-is-empty');
  *  或
- *  import objectIsEmpty from '@fe/utils/object-is-empty';
+ *  import objectIsEmpty from 'front-end-utils/object-is-empty';
  *  console.log(objectIsEmpty({});
  *  ======》true
  */
@@ -205,9 +205,9 @@ module.exports = obj => {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

@@ -86,7 +86,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @param {string} url 引入的js链接
  * @param {string} id 给script添加的ID
  * @return {function} 返回一个promise
- * @author 周志文
+ * @author kt
  * @since 2019-08-01
  */
 

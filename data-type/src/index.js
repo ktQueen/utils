@@ -9,9 +9,9 @@
  * @param  {*} data 数据
  * @returns  {String} type 数据类型
  * @example
- *  var dataType = require('@fe/utils/data-type');
+ *  var dataType = require('front-end-utils/data-type');
  *  或
- *  import dataType from '@fe/utils/data-type';
+ *  import dataType from 'front-end-utils/data-type';
  *  console.log(dataType('123'));
  *  ======》string
  */

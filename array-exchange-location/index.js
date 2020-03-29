@@ -95,9 +95,9 @@ module.exports = {
    * @param {string} newIndex -交换位置后位置
    * @returns {array} arr 返回交换之后的新数组
    * @example
-   *  var arrayExchangeLocation = require('@fe/utils/array-exchange-location');
+   *  var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
    *  或
-   *  import arrayExchangeLocation from '@fe/utils/array-exchange-location';
+   *  import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
    *  console.log(arrayExchangeLocation.exchange(['1','2','3','4'],1,3));
    *  ========>['1','4','3','2']
    */
@@ -114,9 +114,9 @@ module.exports = {
    * @param {number} index -现在的位置
    * @returns {array} arr 返回交换之后的新数组
    * @example
-   *  var arrayExchangeLocation = require('@fe/utils/array-exchange-location');
+   *  var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
    *  或
-   *  import arrayExchangeLocation from '@fe/utils/array-exchange-location';
+   *  import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
    *  console.log(arrayExchangeLocation.toFirst(['1','2','3','4'],2));
    *  ========>['3','2','1','4']
    */
@@ -132,9 +132,9 @@ module.exports = {
    * @param {string} index -现在的位置
    * @returns {array} arr 返回交换之后的新数组
    * @example
-   *  var arrayExchangeLocation = require('@fe/utils/array-exchange-location');
+   *  var arrayExchangeLocation = require('front-end-utils/array-exchange-location');
    *  或
-   *  import arrayExchangeLocation from '@fe/utils/array-exchange-location';
+   *  import arrayExchangeLocation from 'front-end-utils/array-exchange-location';
    *  console.log(arrayExchangeLocation.toLast(['1','2','3','4'],2));
    *  ========>['1','2','4','3']
    */
@@ -249,9 +249,9 @@ module.exports = {
        * @param  {*} data 数据
        * @returns  {String} type 数据类型
        * @example
-       *  var dataType = require('@fe/utils/data-type');
+       *  var dataType = require('front-end-utils/data-type');
        *  或
-       *  import dataType from '@fe/utils/data-type';
+       *  import dataType from 'front-end-utils/data-type';
        *  console.log(dataType('123'));
        *  ======》string
        */

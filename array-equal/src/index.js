@@ -10,9 +10,9 @@
  * @param {Array} arr2 数组2
  * @returns {Boolean} 比较的结果值
  * @example
- *  var arrayEqual = require('@fe/utils/array-equal');
+ *  var arrayEqual = require('front-end-utils/array-equal');
  *  或
- *  import arrayEqual from '@fe/utils/array-equal';
+ *  import arrayEqual from 'front-end-utils/array-equal';
  *  console.log(arrayEqual(['1'], ['1']));
  *  ======》true
  */

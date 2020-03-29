@@ -9,9 +9,9 @@
  * @param  {HTMLElement} ele 当前元素
  * @param  {String} cls className名
  * @example
- *  var addClass = require('@fe/utils/class-add');
+ *  var addClass = require('front-end-utils/class-add');
  *  或
- *  import addClass from '@fe/utils/class-add';
+ *  import addClass from 'front-end-utils/class-add';
  *  addClass(document.getElementById('app'), 'demo123');
  */
 

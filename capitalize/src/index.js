@@ -9,9 +9,9 @@
  * @param {string} str 英文字母
  * @return {string} newStr 首字母大写的英文字母
  * @example
- *  var capitalize = require('@fe/utils/capitalize');
+ *  var capitalize = require('front-end-utils/capitalize');
  *  或
- *  import capitalize from '@fe/utils/capitalize';
+ *  import capitalize from 'front-end-utils/capitalize';
  *  console.log(capitalize('hello'));
  *  ======》Hello
  */

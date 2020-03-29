@@ -11,9 +11,9 @@
  * @param {boolean} immediate 是否立即执行
  * @return {function} 函数
  * @example
- *  var debounce = require('@fe/utils/debounce');
+ *  var debounce = require('front-end-utils/debounce');
  *  或
- *  import debounce from '@fe/utils/debounce';
+ *  import debounce from 'front-end-utils/debounce';
  *  var consoleFn = function(){console.log(1);};// 无防抖函数
  *  var consoleDebounceFn = debounce(function(){console.log(1);},300,false);// 防抖函数
  */

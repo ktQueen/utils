@@ -11,9 +11,9 @@
  * @param {string} newStr 需要插入的字符
  * @returns {string} 返回新生成的字符
  * @example
- *  var stringInsert = require('@fe/utils/string-insert');
+ *  var stringInsert = require('front-end-utils/string-insert');
  *  或
- *  import stringInsert from '@fe/utils/string-insert';
+ *  import stringInsert from 'front-end-utils/string-insert';
  *  console.log(stringInsert('sadsd',2,'qqqq'));
  *  ======》saqqqqdsd
  */
