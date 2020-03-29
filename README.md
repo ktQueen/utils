@@ -33,6 +33,7 @@
 
 **创建/更新一个工具方法的步骤：**
 
+    ![image-20200329152442666](https://raw.githubusercontent.com/ktQueen/utils/master/WeChat0400fc76fecbe34f6cd31463aeddd02a.png)
 
     ⚠️注意：如果是集成现有的工具方法到工具库，工具方法过大，则拆离成多个工具方法再进行以下操作,
 
