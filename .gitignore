@@ -3,3 +3,4 @@ dist/
 .idea/
 *.map
 *.DS_Store
+package-lock.json
